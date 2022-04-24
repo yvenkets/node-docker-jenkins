@@ -1,8 +1,6 @@
-FROM node:12
-WORKDIR /app
-COPY package.json /app
+FROM node:latest
+WORKDIR /usr/src/app
+COPY . /
 RUN npm install
-COPY . /app
-CMD node shivam.js
 EXPOSE 8080
 CMD [ "npm","start" ]
