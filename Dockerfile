@@ -1,6 +1,6 @@
 FROM node:latest
 WORKDIR /usr/src/app
-COPY . /
+COPY app/* /
 RUN npm install
 EXPOSE 8080
 CMD [ "npm","start" ]
