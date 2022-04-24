@@ -5,3 +5,4 @@ RUN npm install
 COPY . /app
 CMD node shivam.js
 EXPOSE 8080
+CMD [ "npm","start" ]
